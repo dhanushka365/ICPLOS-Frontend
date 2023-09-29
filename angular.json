@@ -25,7 +25,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@nebular/theme/styles/prebuilt/default.css"
             ],
             "scripts": []
           },
@@ -94,5 +95,10 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1b8c7dbe-e3a4-4a2f-afad-5b3502a9c4a4"
   }
+
+  
 }
