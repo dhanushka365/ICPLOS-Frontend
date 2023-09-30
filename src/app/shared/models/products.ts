@@ -1,4 +1,3 @@
-export type products = Products[]
 
 export interface Products {
   id: string
