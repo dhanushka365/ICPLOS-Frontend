@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Products } from '../shared/models/products';
+import { Product } from '../shared/models/products';
 import { ShopService } from './shop.service';
 
 @Component({
@@ -8,13 +8,14 @@ import { ShopService } from './shop.service';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent implements OnInit {
-  products: Products[] = [];
-  
+
+  products: Product[] = [];
   constructor(private shopService:ShopService) { }
 
   ngOnInit(): void {
     this.shopService.getProducts().subscribe((response:any) => {
       this.products = response.data;
+      console.log('Products:', this.products);
     } , error => {
       console.log(error);
     } );
