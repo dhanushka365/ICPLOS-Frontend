@@ -13,8 +13,8 @@ export class ShopComponent implements OnInit {
   constructor(private shopService:ShopService) { }
 
   ngOnInit(): void {
-    this.shopService.getProducts().subscribe((response:any) => {
-      this.products = response.data;
+    this.shopService.getProducts().subscribe((response: Product[]) => {
+      this.products = response;
       console.log('Products:', this.products);
     } , error => {
       console.log(error);
