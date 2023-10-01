@@ -7,10 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from './core/core.module';
 import { ShopModule } from './shop/shop.module';
+import { ProfileComponent } from './core/profile/profile.component';
 @NgModule({
   declarations: [
-    AppComponent,
-
+    AppComponent
+ 
   ],
   imports: [
     BrowserModule,

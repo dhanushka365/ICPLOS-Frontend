@@ -1,0 +1,65 @@
+/* Profile Dropdown Container */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Profile Link Styling */
+.profile-link {
+    text-decoration: none;
+    color: #333; /* Change the color as needed */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Profile Image Styling */
+.profile-link img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* Creates a circular profile picture */
+    margin-right: 8px; /* Add spacing between the icon and text */
+}
+
+/* Profile Menu Styling */
+.profile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow to the menu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px; /* Adjust the width as needed */
+    z-index: 1000; /* Ensure the menu appears above other elements */
+    border-radius: 8px; /* Round the corners of the dropdown */
+}
+
+/* Remove underline and style links within the dropdown menu */
+.profile-menu a {
+    text-decoration: none;
+    color: #333; /* Change the color as needed */
+    display: block;
+    padding: 10px 20px; /* Adjust padding as needed for spacing */
+    border-bottom: 1px solid #ccc; /* Add a border between items */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Add hover effect for menu items */
+.profile-menu a:hover {
+    background-color: #90c55f; /* Change to your desired hover background color */
+    color: #fff; /* Change to your desired hover text color */
+}
+
+/* Profile Menu Separator Line */
+.profile-menu hr {
+    margin: 4px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Show the dropdown menu when the .profile-dropdown container has the .active class */
+.profile-dropdown.active .profile-menu {
+    display: block;
+}
